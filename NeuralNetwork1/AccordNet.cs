@@ -39,20 +39,22 @@ namespace NeuralNetwork1
         {
             var teacher = MakeTeacher(parallel);
 
-            int iters = 1;
+            int iterations = 1;
             while (teacher.Run(sample.input, sample.Output) > acceptableError)
             {
-                ++iters;
+                ++iterations;
             }
 
-            return iters;
+            return iterations;
         }
 
         //  Создаём "обучателя" - либо параллельного, либо последовательного  
         private ISupervisedLearning MakeTeacher(bool parallel)
         {
             if (parallel)
+            {
                 return new ParallelResilientBackpropagationLearning(network);
+            }
             return new ResilientBackpropagationLearning(network);
         }
 

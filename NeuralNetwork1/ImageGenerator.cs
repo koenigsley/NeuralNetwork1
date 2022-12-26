@@ -249,7 +249,7 @@ namespace NeuralNetwork1
         /// <returns></returns>
         public Bitmap GenBitmap()
         {
-            Bitmap drawArea = new Bitmap(200, 200);
+            var drawArea = new Bitmap(200, 200);
             for (int i = 0; i < 200; ++i)
                 for (int j = 0; j < 200; ++j)
                     if (img[i, j])
@@ -257,5 +257,4 @@ namespace NeuralNetwork1
             return drawArea;
         }
     }
-
 }

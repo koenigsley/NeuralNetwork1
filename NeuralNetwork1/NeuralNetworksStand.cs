@@ -46,6 +46,7 @@ namespace NeuralNetwork1
             generator.FigureCount = (int) classCounter.Value;
             button3_Click(this, null);
             pictureBox1.Image = Properties.Resources.Title;
+            Size = new Size(850, 580);
         }
 
         public void UpdateLearningInfo(double progress, double error, TimeSpan elapsedTime)
@@ -212,6 +213,11 @@ namespace NeuralNetwork1
         private void testNetButton_MouseEnter(object sender, EventArgs e)
         {
             infoStatusLabel.Text = "Тестировать нейросеть на тестовой выборке такого же размера";
+        }
+
+        private void TrainingSizeCounter_ValueChanged(object sender, EventArgs e)
+        {
+            var ts = TrainingSizeCounter;
         }
     }
 }

@@ -37,10 +37,12 @@ namespace NeuralNetwork1
         public Sample(double[] inputValues, int classesCount, FigureType sampleClass = FigureType.Undef)
         {
             //  Клонируем массивчик
-            input = (double[]) inputValues.Clone();
+            input = (double[])inputValues.Clone();
             Output = new double[classesCount];
-            if (sampleClass != FigureType.Undef) Output[(int) sampleClass] = 1;
-
+            if (sampleClass != FigureType.Undef)
+            {
+                Output[(int)sampleClass] = 1;
+            }    
 
             recognizedClass = FigureType.Undef;
             actualClass = sampleClass;
@@ -58,14 +60,19 @@ namespace NeuralNetwork1
         {
             Output = neuralOutput;
             if (error == null)
+            {
                 error = new double[Output.Length];
+            }
 
             //  Нам так-то выход не нужен, нужна ошибка и определённый класс
             recognizedClass = 0;
             for (int i = 0; i < Output.Length; ++i)
             {
-                error[i] = (Output[i] - (i == (int) actualClass ? 1 : 0));
-                if (Output[i] > Output[(int) recognizedClass]) recognizedClass = (FigureType) i;
+                error[i] = Output[i] - (i == (int)actualClass ? 1 : 0);
+                if (Output[i] > Output[(int) recognizedClass])
+                {
+                    recognizedClass = (FigureType)i;
+                }
             }
 
             return recognizedClass;
@@ -79,7 +86,9 @@ namespace NeuralNetwork1
         {
             double Result = 0;
             for (int i = 0; i < Output.Length; ++i)
+            {
                 Result += Math.Pow(error[i], 2);
+            }
             return Result;
         }
 
@@ -91,7 +100,9 @@ namespace NeuralNetwork1
         public void updateErrorVector(double[] errorVector)
         {
             for (int i = 0; i < errorVector.Length; ++i)
+            {
                 errorVector[i] += error[i];
+            }
         }
 
         /// <summary>
@@ -102,21 +113,37 @@ namespace NeuralNetwork1
         {
             string result = "Sample decoding : " + actualClass.ToString() + "(" + ((int) actualClass).ToString() +
                             "); " + Environment.NewLine + "Input : ";
-            for (int i = 0; i < input.Length; ++i) result += input[i].ToString() + "; ";
+            for (int i = 0; i < input.Length; ++i)
+            {
+                result += input[i].ToString() + "; ";
+            }
             result += Environment.NewLine + "Output : ";
-            if (Output == null) result += "null;";
+            if (Output == null)
+            {
+                result += "null;";
+            }
             else
+            {
                 for (int i = 0; i < Output.Length; ++i)
+                {
                     result += Output[i].ToString() + "; ";
+                }
+            }
             result += Environment.NewLine + "Error : ";
 
-            if (error == null) result += "null;";
+            if (error == null)
+            {
+                result += "null;";
+            }
             else
+            {
                 for (int i = 0; i < error.Length; ++i)
+                {
                     result += error[i].ToString() + "; ";
+                }
+            }
             result += Environment.NewLine + "Recognized : " + recognizedClass.ToString() + "(" +
                       ((int) recognizedClass).ToString() + "); " + Environment.NewLine;
-
 
             return result;
         }
@@ -125,10 +152,7 @@ namespace NeuralNetwork1
         /// Правильно ли распознан образ
         /// </summary>
         /// <returns></returns>
-        public bool Correct()
-        {
-            return actualClass == recognizedClass;
-        }
+        public bool Correct() => actualClass == recognizedClass;
     }
 
     /// <summary>
@@ -152,10 +176,8 @@ namespace NeuralNetwork1
 
         public int Count => samples.Count;
 
-        public IEnumerator GetEnumerator()
-        {
-            return samples.GetEnumerator();
-        }
+        public IEnumerator GetEnumerator() 
+            => samples.GetEnumerator();
 
         /// <summary>
         /// Реализация доступа по индексу
@@ -174,8 +196,14 @@ namespace NeuralNetwork1
             double wrong = 0;
             foreach (var sample in samples)
             {
-                if (sample.actualClass == network.Predict(sample)) ++correct;
-                else ++wrong;
+                if (sample.actualClass == network.Predict(sample))
+                {
+                    ++correct;
+                }
+                else
+                {
+                    ++wrong;
+                }
             }
             return correct / (correct + wrong);
         }

@@ -74,59 +74,60 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(116, 72);
-            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Location = new System.Drawing.Point(155, 90);
+            label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(126, 20);
+            label2.Size = new System.Drawing.Size(167, 25);
             label2.TabIndex = 2;
             label2.Text = "Структура сети";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(12, 112);
-            label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label4.Location = new System.Drawing.Point(16, 140);
+            label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(223, 20);
+            label4.Size = new System.Drawing.Size(300, 25);
             label4.TabIndex = 5;
             label4.Text = "Размер обучающей выборки";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new System.Drawing.Point(104, 154);
-            label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label5.Location = new System.Drawing.Point(139, 192);
+            label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(138, 20);
+            label5.Size = new System.Drawing.Size(181, 25);
             label5.TabIndex = 7;
             label5.Text = "Количество эпох";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new System.Drawing.Point(34, 298);
-            label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label6.Location = new System.Drawing.Point(50, 347);
+            label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(80, 20);
+            label6.Size = new System.Drawing.Size(104, 25);
             label6.TabIndex = 9;
             label6.Text = "Точность";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new System.Drawing.Point(818, 526);
-            label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label7.Location = new System.Drawing.Point(1091, 627);
+            label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(60, 20);
+            label7.Size = new System.Drawing.Size(79, 25);
             label7.TabIndex = 14;
             label7.Text = "Status:";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 19);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(748, 767);
+            this.pictureBox1.Size = new System.Drawing.Size(996, 958);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -135,10 +136,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(771, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(1028, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(343, 20);
+            this.label1.Size = new System.Drawing.Size(449, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Выберите сеть, обучите или протестируйте";
             // 
@@ -160,11 +161,11 @@
             this.groupBox1.Controls.Add(this.TrainingSizeCounter);
             this.groupBox1.Controls.Add(label4);
             this.groupBox1.Controls.Add(label2);
-            this.groupBox1.Location = new System.Drawing.Point(771, 62);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Location = new System.Drawing.Point(1028, 78);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(441, 460);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.groupBox1.Size = new System.Drawing.Size(588, 544);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Параметры сети";
@@ -172,10 +173,10 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(194, 34);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(259, 42);
+            this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 20);
+            this.label11.Size = new System.Drawing.Size(60, 25);
             this.label11.TabIndex = 21;
             this.label11.Text = "Сеть";
             // 
@@ -183,10 +184,10 @@
             // 
             this.netTypeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.netTypeBox.FormattingEnabled = true;
-            this.netTypeBox.Location = new System.Drawing.Point(249, 29);
-            this.netTypeBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.netTypeBox.Location = new System.Drawing.Point(332, 36);
+            this.netTypeBox.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.netTypeBox.Name = "netTypeBox";
-            this.netTypeBox.Size = new System.Drawing.Size(180, 28);
+            this.netTypeBox.Size = new System.Drawing.Size(239, 33);
             this.netTypeBox.TabIndex = 20;
             // 
             // parallelCheckBox
@@ -194,29 +195,29 @@
             this.parallelCheckBox.AutoSize = true;
             this.parallelCheckBox.Checked = true;
             this.parallelCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.parallelCheckBox.Location = new System.Drawing.Point(51, 374);
-            this.parallelCheckBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.parallelCheckBox.Location = new System.Drawing.Point(73, 443);
+            this.parallelCheckBox.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.parallelCheckBox.Name = "parallelCheckBox";
-            this.parallelCheckBox.Size = new System.Drawing.Size(208, 24);
+            this.parallelCheckBox.Size = new System.Drawing.Size(267, 29);
             this.parallelCheckBox.TabIndex = 19;
             this.parallelCheckBox.Text = "Параллельный расчёт";
             this.parallelCheckBox.UseVisualStyleBackColor = true;
             // 
             // netStructureBox
             // 
-            this.netStructureBox.Location = new System.Drawing.Point(250, 68);
-            this.netStructureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.netStructureBox.Location = new System.Drawing.Point(333, 85);
+            this.netStructureBox.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.netStructureBox.Name = "netStructureBox";
-            this.netStructureBox.Size = new System.Drawing.Size(178, 26);
+            this.netStructureBox.Size = new System.Drawing.Size(236, 31);
             this.netStructureBox.TabIndex = 18;
             this.netStructureBox.Text = "400;500;20;2";
             // 
             // recreateNetButton
             // 
-            this.recreateNetButton.Location = new System.Drawing.Point(116, 248);
-            this.recreateNetButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.recreateNetButton.Location = new System.Drawing.Point(153, 283);
+            this.recreateNetButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.recreateNetButton.Name = "recreateNetButton";
-            this.recreateNetButton.Size = new System.Drawing.Size(210, 46);
+            this.recreateNetButton.Size = new System.Drawing.Size(280, 58);
             this.recreateNetButton.TabIndex = 17;
             this.recreateNetButton.Text = "Пересоздать сеть";
             this.recreateNetButton.UseVisualStyleBackColor = true;
@@ -225,8 +226,8 @@
             // 
             // classCounter
             // 
-            this.classCounter.Location = new System.Drawing.Point(250, 192);
-            this.classCounter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.classCounter.Location = new System.Drawing.Point(333, 240);
+            this.classCounter.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.classCounter.Maximum = new decimal(new int[] {
             4,
             0,
@@ -238,7 +239,7 @@
             0,
             0});
             this.classCounter.Name = "classCounter";
-            this.classCounter.Size = new System.Drawing.Size(180, 26);
+            this.classCounter.Size = new System.Drawing.Size(240, 31);
             this.classCounter.TabIndex = 16;
             this.classCounter.Value = new decimal(new int[] {
             2,
@@ -250,19 +251,19 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(75, 192);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(100, 240);
+            this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(165, 20);
+            this.label10.Size = new System.Drawing.Size(215, 25);
             this.label10.TabIndex = 15;
             this.label10.Text = "Количество классов";
             // 
             // testNetButton
             // 
-            this.testNetButton.Location = new System.Drawing.Point(244, 402);
-            this.testNetButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.testNetButton.Location = new System.Drawing.Point(330, 477);
+            this.testNetButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.testNetButton.Name = "testNetButton";
-            this.testNetButton.Size = new System.Drawing.Size(150, 46);
+            this.testNetButton.Size = new System.Drawing.Size(200, 58);
             this.testNetButton.TabIndex = 14;
             this.testNetButton.Text = "Тест";
             this.testNetButton.UseVisualStyleBackColor = true;
@@ -271,10 +272,10 @@
             // 
             // netTrainButton
             // 
-            this.netTrainButton.Location = new System.Drawing.Point(46, 402);
-            this.netTrainButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.netTrainButton.Location = new System.Drawing.Point(66, 477);
+            this.netTrainButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.netTrainButton.Name = "netTrainButton";
-            this.netTrainButton.Size = new System.Drawing.Size(150, 46);
+            this.netTrainButton.Size = new System.Drawing.Size(200, 58);
             this.netTrainButton.TabIndex = 11;
             this.netTrainButton.Text = "Обучить";
             this.netTrainButton.UseVisualStyleBackColor = true;
@@ -283,19 +284,19 @@
             // 
             // AccuracyCounter
             // 
-            this.AccuracyCounter.Location = new System.Drawing.Point(38, 323);
-            this.AccuracyCounter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AccuracyCounter.Location = new System.Drawing.Point(56, 379);
+            this.AccuracyCounter.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.AccuracyCounter.Maximum = 100;
             this.AccuracyCounter.Name = "AccuracyCounter";
-            this.AccuracyCounter.Size = new System.Drawing.Size(368, 69);
+            this.AccuracyCounter.Size = new System.Drawing.Size(491, 90);
             this.AccuracyCounter.TabIndex = 10;
             this.AccuracyCounter.TickFrequency = 10;
             this.AccuracyCounter.Value = 80;
             // 
             // EpochesCounter
             // 
-            this.EpochesCounter.Location = new System.Drawing.Point(250, 151);
-            this.EpochesCounter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.EpochesCounter.Location = new System.Drawing.Point(333, 189);
+            this.EpochesCounter.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.EpochesCounter.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -307,7 +308,7 @@
             0,
             0});
             this.EpochesCounter.Name = "EpochesCounter";
-            this.EpochesCounter.Size = new System.Drawing.Size(180, 26);
+            this.EpochesCounter.Size = new System.Drawing.Size(240, 31);
             this.EpochesCounter.TabIndex = 8;
             this.EpochesCounter.Value = new decimal(new int[] {
             20,
@@ -317,8 +318,8 @@
             // 
             // TrainingSizeCounter
             // 
-            this.TrainingSizeCounter.Location = new System.Drawing.Point(250, 109);
-            this.TrainingSizeCounter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TrainingSizeCounter.Location = new System.Drawing.Point(333, 136);
+            this.TrainingSizeCounter.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.TrainingSizeCounter.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -330,39 +331,40 @@
             0,
             0});
             this.TrainingSizeCounter.Name = "TrainingSizeCounter";
-            this.TrainingSizeCounter.Size = new System.Drawing.Size(180, 26);
+            this.TrainingSizeCounter.Size = new System.Drawing.Size(240, 31);
             this.TrainingSizeCounter.TabIndex = 6;
             this.TrainingSizeCounter.Value = new decimal(new int[] {
             700,
             0,
             0,
             0});
+            this.TrainingSizeCounter.ValueChanged += new System.EventHandler(this.TrainingSizeCounter_ValueChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(834, 565);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(1112, 706);
+            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 20);
+            this.label8.Size = new System.Drawing.Size(0, 25);
             this.label8.TabIndex = 6;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(783, 565);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(1044, 675);
+            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(22, 80);
+            this.label9.Size = new System.Drawing.Size(30, 100);
             this.label9.TabIndex = 7;
             this.label9.Text = "0:\r\n1:\r\n2:\r\n3:";
             // 
             // trainOneButton
             // 
-            this.trainOneButton.Location = new System.Drawing.Point(771, 738);
-            this.trainOneButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.trainOneButton.Location = new System.Drawing.Point(1028, 891);
+            this.trainOneButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.trainOneButton.Name = "trainOneButton";
-            this.trainOneButton.Size = new System.Drawing.Size(189, 46);
+            this.trainOneButton.Size = new System.Drawing.Size(252, 58);
             this.trainOneButton.TabIndex = 8;
             this.trainOneButton.Text = "Обучить образцу";
             this.trainOneButton.UseVisualStyleBackColor = true;
@@ -370,10 +372,10 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(776, 652);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.progressBar1.Location = new System.Drawing.Point(1035, 784);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(436, 34);
+            this.progressBar1.Size = new System.Drawing.Size(581, 42);
             this.progressBar1.Step = 1;
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 10;
@@ -383,10 +385,10 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.infoStatusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 800);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 998);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 21, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1222, 32);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(3, 0, 28, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1629, 42);
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -394,17 +396,17 @@
             // 
             this.infoStatusLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.infoStatusLabel.Name = "infoStatusLabel";
-            this.infoStatusLabel.Size = new System.Drawing.Size(119, 25);
+            this.infoStatusLabel.Size = new System.Drawing.Size(162, 32);
             this.infoStatusLabel.Text = "Обучите сеть";
             this.infoStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // elapsedTimeLabel
             // 
             this.elapsedTimeLabel.AutoSize = true;
-            this.elapsedTimeLabel.Location = new System.Drawing.Point(783, 691);
-            this.elapsedTimeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.elapsedTimeLabel.Location = new System.Drawing.Point(1044, 833);
+            this.elapsedTimeLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.elapsedTimeLabel.Name = "elapsedTimeLabel";
-            this.elapsedTimeLabel.Size = new System.Drawing.Size(62, 20);
+            this.elapsedTimeLabel.Size = new System.Drawing.Size(82, 25);
             this.elapsedTimeLabel.TabIndex = 12;
             this.elapsedTimeLabel.Text = "Время:";
             // 
@@ -417,18 +419,18 @@
             // StatusLabel
             // 
             this.StatusLabel.AutoSize = true;
-            this.StatusLabel.Location = new System.Drawing.Point(882, 526);
-            this.StatusLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.StatusLabel.Location = new System.Drawing.Point(1176, 627);
+            this.StatusLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(54, 20);
+            this.StatusLabel.Size = new System.Drawing.Size(72, 25);
             this.StatusLabel.TabIndex = 15;
             this.StatusLabel.Text = "NONE";
             // 
             // NeuralNetworksStand
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1222, 832);
+            this.ClientSize = new System.Drawing.Size(1629, 1040);
             this.Controls.Add(this.StatusLabel);
             this.Controls.Add(label7);
             this.Controls.Add(this.elapsedTimeLabel);
@@ -441,6 +443,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "NeuralNetworksStand";
             this.Text = "Банальный студенческий перспетрон";

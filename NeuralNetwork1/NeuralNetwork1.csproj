@@ -76,6 +76,10 @@
   <ItemGroup>
     <Compile Include="AccordNet.cs" />
     <Compile Include="BaseNetwork.cs" />
+    <Compile Include="Randomizer.cs" />
+    <Compile Include="Layer.cs" />
+    <Compile Include="MathStuff.cs" />
+    <Compile Include="Matrix.cs" />
     <Compile Include="NeuralNetworksStand.cs">
       <SubType>Form</SubType>
     </Compile>
