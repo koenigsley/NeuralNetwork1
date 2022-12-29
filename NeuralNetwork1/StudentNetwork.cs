@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Threading.Tasks;
 
 namespace NeuralNetwork1
 {
@@ -9,7 +8,6 @@ namespace NeuralNetwork1
     {
         private double learningRate;
         private Layer[] layers;
-        private int numLayers => layers.Length;
         private Stopwatch stopWatch;
 
         public StudentNetwork(int[] structure, double learningRate = 0.01)
@@ -83,7 +81,7 @@ namespace NeuralNetwork1
         {
             var (shifts, computedOutput) = GoBackward(input, output);
 
-            for (int i = 0; i < numLayers; i++)
+            for (int i = 0; i < layers.Length; i++)
             {
                 layers[i].AdjustWeights(shifts[i].Item1, shifts[i].Item2, learningRate);
             }
@@ -95,7 +93,7 @@ namespace NeuralNetwork1
         protected override double[] Compute(double[] input)
         {
             var output = input;
-            for (int i = 0; i < numLayers; i++)
+            for (int i = 0; i < layers.Length; i++)
             {
                 output = layers[i].ComputeOutput(output);
             }
@@ -104,20 +102,20 @@ namespace NeuralNetwork1
 
         private Tuple<Tuple<Matrix, Matrix>[], double[]> GoBackward(double[] input, double[] output)
         {
-            var weightsShifts = new Matrix[numLayers];
-            var biasShifts = new Matrix[numLayers];
+            var weightsShifts = new Matrix[layers.Length];
+            var biasShifts = new Matrix[layers.Length];
 
             var activations = GoForward(input);
 
-            var computedOutput = activations[numLayers];
+            var computedOutput = activations[layers.Length];
             var realOutputMatrix = output.ToMatrix();
             var error = realOutputMatrix - computedOutput.ToMatrix();
             var gradient = Matrix.ComputeAdamarProduct(error, realOutputMatrix.SigmoidDerivative());
 
-            weightsShifts[numLayers - 1] = Matrix.ComputeDotProduct(gradient, activations[activations.Length - 2]);
-            biasShifts[numLayers - 1] = gradient;
+            weightsShifts[layers.Length - 1] = Matrix.ComputeDotProduct(gradient, activations[activations.Length - 2]);
+            biasShifts[layers.Length - 1] = gradient;
 
-            for (int i = numLayers - 1; i > 0; i--)
+            for (int i = layers.Length - 1; i > 0; i--)
             {
                 gradient = Matrix.ComputeAdamarProduct(
                     layers[i].Weights.Transponse() * gradient, 
@@ -127,8 +125,8 @@ namespace NeuralNetwork1
                 biasShifts[i - 1] = gradient;
             }
 
-            var shifts = new Tuple<Matrix, Matrix>[numLayers];
-            for (int i = 0; i < numLayers; i++)
+            var shifts = new Tuple<Matrix, Matrix>[layers.Length];
+            for (int i = 0; i < layers.Length; i++)
             {
                 shifts[i] = Tuple.Create(weightsShifts[i], biasShifts[i]);
             }
@@ -140,7 +138,7 @@ namespace NeuralNetwork1
         {
             var activation = input;
             var activations = new List<double[]> { activation };
-            for (int i = 0; i < numLayers; i++)
+            for (int i = 0; i < layers.Length; i++)
             {
                 activation = layers[i].ComputeOutput(activation);
                 activations.Add(activation);
